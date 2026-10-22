@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">
+             <img src="images/logo.webp" class="logo-img" alt="Logo">
+        </a>
+
+        <ul id="menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="container">
+        
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                
+                 <div class="hero-content">
+                    <h2>Hi, I am Fiki!</h2>
+                    <p>Welcome to my professional portfolio!</p>
+                    <div class="hero-buttons">
+                        <a href="#follow" class="btn btn-gradient">Follow</a>
+                        <a href="#portfolio" class="btn btn-gradient">View My Work</a>
+                    </div>
+                </div>
+
+                <div class="hero-profile-card">
+                    <img src="images/lucani.jpg" alt="Blank Profile Card" class="profile-img">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h3 class="section-title">My Projects</h3>
+            <div class="portfolio-grid">
+                
+                <div class="portfolio-card">
+                    <img src="images/project1.jpg" alt="Project One" class="project-img">
+                    <div class="card-body">
+                        <h4>TO-DO LIST</h4>
+                        <p>A to-do list system that saves every changes.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="images/project2.jpg" alt="Project Two" class="project-img">
+                    <div class="card-body">
+                        <h4>CALCULATOR</h4>
+                        <p>A simple calculator system.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="images/project3.jpg" alt="Project Three" class="project-img">
+                    <div class="card-body">
+                        <h4>RANDOM QUOTE</h4>
+                        <p>A random quote system linked with an IP.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h3 class="section-title">Get In Touch</h3>
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-solid">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fiki. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
